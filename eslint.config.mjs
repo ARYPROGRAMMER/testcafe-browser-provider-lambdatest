@@ -164,6 +164,26 @@ export default [
             'no-use-before-define':        ['error', 'nofunc'],
             'handle-callback-err':         'off',
             'require-atomic-updates':      'off',
+            'no-unused-vars':              [
+                'error',
+                {
+                    varsIgnorePattern:         '^_',
+                    argsIgnorePattern:         '^_',
+                    caughtErrorsIgnorePattern: '^_'
+                }
+            ]
         },
     },
+    {
+        files:           ['test/**/*.js'],
+        languageOptions: {
+            globals: {
+                ...globals.mocha,
+                fixture: 'readonly'
+            },
+        },
+        rules: {
+            'no-unused-expressions': 'off',
+        },
+    }
 ];
