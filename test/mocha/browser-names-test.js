@@ -14,18 +14,18 @@ describe('Browser names', function () {
     it('Should return list of common browsers and devices', function () {
         return lambdatestProvider.getBrowserList().then(function (list) {
             const commonBrowsers = [
-                'Internet Explorer@11.0:Windows 7',
-                'Internet Explorer@10.0:Windows 7',
-                'Chrome@76.0:OS X El Capitan',
-                'Chrome@75.0:OS X El Capitan',
-                'Firefox@67.0:OS X El Capitan',
-                'Firefox@66.0:OS X El Capitan',
-                'Chrome@74.0:OS X Yosemite',
-                'Chrome@73.0:OS X Yosemite',
-                'Firefox@66.0:OS X Yosemite',
-                'Firefox@65.0:OS X Yosemite',
-                'Chrome@67.0:OS X Mavericks',
-                'Chrome@66.0:OS X Mavericks',
+                'Chrome@143.0:Windows 11',
+                'Chrome@142.0:Windows 11',
+                'Chrome@141.0:Windows 11',
+                'Chrome@140.0:Windows 11',
+                'Chrome@139.0:Windows 11',
+                'Chrome@138.0:Windows 11',
+                'Chrome@137.0:Windows 11',
+                'Chrome@136.0:Windows 11',
+                'Chrome@135.0:Windows 11',
+                'Chrome@134.0:Windows 11',
+                'Chrome@133.0:Windows 11',
+                'Chrome@132.0:Windows 11',
             ];
 
             const areBrowsersInList = commonBrowsers.map(function (browser) {
